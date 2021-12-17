@@ -7,7 +7,7 @@
 
   border-radius: 8px;
 }
-.Weather h1 {
+h1 {
   font-size: 24px;
   font-weight: 100;
   line-height: 30px;
@@ -15,19 +15,29 @@
   color: rgb(33, 33, 33);
 }
 .Weather form {
-  display: block;
-  font-size: 16px;
+  display: inline-block;
+  font-size: 14px;
   margin: 20px 0;
   color: #878787;
+}
+.Weather .row {
+  display: flex;
 }
 .Weather .form-search {
   max-width: 75%;
   padding: 5px 15px;
   position: relative;
-  width: 400px;
+  width: 300px;
 }
 .Weather .btn {
-  width: 100px;
+  position: relative;
+  background-color: #58a6ef;
+  color: white;
+}
+@media (max-width: 600px) {
+  .btn {
+    margin-left: -50px;
+  }
 }
 
 .Weather ul {
@@ -68,4 +78,8 @@
 
 .float-left {
   display: inline-block;
+  margin: 10px auto;
+}
+.WeatherTemperature {
+  margin-left: 10px;
 }

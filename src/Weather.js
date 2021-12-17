@@ -34,9 +34,9 @@ export default function Weather(props) {
     search();
   }
 
-  function handleCityChange(event) {
+  function cityChange(event) {
     setCity(event.target.value);
-    //alert(city);
+    
   }
 
   if (weatherData.ready) {
@@ -50,14 +50,14 @@ export default function Weather(props) {
                 className="form-search"
                 placeholder="Enter a city.."
                 autoFocus="on"
-                onChange={handleCityChange}
+                onChange={cityChange}
               />
             </div>
-            <div className="col-3">
+            <div className="col-3 p-0">
               <input
                 type="submit"
                 value="Search"
-                className="btn btn-primary w-100"
+                className="btn w-100"
               />
             </div>
           </div>
