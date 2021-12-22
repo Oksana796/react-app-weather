@@ -9,8 +9,8 @@ export default function WeatherForecast(props) {
 
   function handleResponse(response) {
     //console.log(response.data);
-    setLoaded(true);
     setForecast(response.data.daily);
+    setLoaded(true);
   }
   //console.log(props);
 
